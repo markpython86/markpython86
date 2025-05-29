@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://markpython86.github.io/markpython86-tron-github/">
-    <img src="./output/contrib-tron-dark.svg" 
+    <img src="https://markpython86.github.io/markpython86-tron-github/preview.png" 
          alt="Tron GitHub Game - AI Light Cycles Racing" 
          width="800"/>
   </a>
