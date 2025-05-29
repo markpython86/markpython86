@@ -2,31 +2,11 @@
 
 ## 🏍️ Contrib Tron - AI Light Cycles Racing Through My GitHub Contributions
 
-<div align="center">
-  <a href="https://markpython86.github.io/markpython86-tron-github/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/800x300/0d1117/00d4ff/png?text=🏍️+AI+Light+Cycles+Racing+Through+GitHub+Data+🏍️">
-      <img src="https://via.placeholder.com/800x300/f6f8fa/0969da/png?text=🏍️+AI+Light+Cycles+Racing+Through+GitHub+Data+🏍️" 
-           alt="Tron GitHub Game - Click to Play" 
-           width="800" 
-           height="300"/>
-    </picture>
-  </a>
-</div>
+[![Tron GitHub Game - AI Light Cycles Racing](output/contrib-tron-dark.svg)](https://markpython86.github.io/markpython86-tron-github/)
 
-<div align="center">
-  <strong>🎮 <a href="https://markpython86.github.io/markpython86-tron-github/">PLAY THE LIVE GAME</a> 🎮</strong>
-  <br>
-  <em>Watch AI motorcycles race through my real GitHub contribution data!</em>
-  <br><br>
-  
-  <a href="https://markpython86.github.io/markpython86-tron-github/">
-    <img src="https://img.shields.io/badge/🏍️_Play_Now-Live_Game-00d4ff?style=for-the-badge&logo=github" alt="Play Tron Game"/>
-  </a>
-  <a href="https://github.com/markpython86/tron-github">
-    <img src="https://img.shields.io/badge/⭐_Star-Create_Your_Own-ffa502?style=for-the-badge&logo=github" alt="Star Project"/>
-  </a>
-</div>
+🎮 Live auto-playing Tron game using my GitHub contribution data
+
+🏍️ [Click to Play Interactive Version](https://markpython86.github.io/markpython86-tron-github/)
 
 Last updated: 2024-12-19 20:00 UTC
 
