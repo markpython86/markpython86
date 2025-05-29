@@ -1,55 +1,38 @@
-name: Update Profile README with Tron Game
+name: Generate Tron Light Cycles
 
 on:
+  # Runs on schedule (daily at midnight UTC)
   schedule:
-    - cron: '0 */6 * * *'  # Every 6 hours
+    - cron: "0 0 * * *"
+  
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  
+  # Run on push to main branch (for testing)
   push:
     branches: [ main ]
 
 jobs:
-  update-readme:
+  generate:
     runs-on: ubuntu-latest
+    name: Generate Tron Animation
     
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-
-    - name: Update README with Tron Game
-      run: |
-        # Get current timestamp
-        TIMESTAMP=$(date '+%Y-%m-%d %H:%M UTC')
+      - name: Checkout
+        uses: actions/checkout@v4
         
-        # Create README with embedded game
-        cat > README.md << 'EOF'
-        # Hi there! 👋
-
-        ## 🏍️ Contrib Tron - AI Light Cycles Racing Through My GitHub Contributions
-
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./output/contrib-tron-dark.svg" />
-          <source media="(prefers-color-scheme: light)" srcset="./output/contrib-tron.svg" />
-          <img alt="Tron GitHub Game - AI Light Cycles Racing" src="./output/contrib-tron-dark.svg" />
-        </picture>
-
-        🎮 Live auto-playing Tron game using my GitHub contribution data
-
-        🏍️ [Click to Play Interactive Version](https://markpython86.github.io/markpython86-tron-github/)
-
-        Last updated: TIMESTAMP_PLACEHOLDER
-        EOF
-
-        # Replace timestamp placeholder
-        sed -i "s/TIMESTAMP_PLACEHOLDER/$TIMESTAMP/g" README.md
-
-    - name: Commit and push changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add README.md
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
-          git commit -m "🏍️ Update Tron game display - $(date)"
-          git push
-        fi
+      - name: Generate Tron Light Cycles Animation
+        uses: markpython86/tron-github@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            tron-light-cycles.svg
+            tron-light-cycles-dark.svg?theme=dark
+            
+      - name: Commit and push generated SVG files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add tron-light-cycles*.svg
+          git diff --staged --quiet || git commit -m "🏍️ Update Tron Light Cycles animation"
+          git push 
