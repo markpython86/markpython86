@@ -28,9 +28,6 @@ Welcome to my GitHub profile! I'm a passionate developer who loves creating inno
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 
-## 📊 GitHub Stats
-
-![Mark's GitHub Stats](https://github-readme-stats.vercel.app/api?username=markpython86&show_icons=true&theme=dark)
 
 ## 🎨 Featured Projects
 
