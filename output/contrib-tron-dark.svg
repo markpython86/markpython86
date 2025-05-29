@@ -1,6 +1,49 @@
 <svg width="740" height="200" xmlns="http://www.w3.org/2000/svg">
-  <rect width="740" height="200" fill="#0d1117"/>
-  <text x="370" y="100" text-anchor="middle" fill="#00d4ff" font-family="Arial" font-size="24">
-    🏍️ Contrib Tron Animation Coming Soon!
-  </text>
+  <defs>
+    <style>
+      .bg { fill: #161b22; }
+      .title { fill: #00d4ff; font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; }
+      .subtitle { fill: #8b949e; font-family: Arial, sans-serif; font-size: 14px; }
+      .cycle { fill: #00d4ff; }
+      .trail { fill: #00ff88; opacity: 0.7; }
+      .grid-cell { fill: #30363d; stroke: #30363d; stroke-width: 0.5; }
+      
+      .cycle-move {
+        animation: move 3s linear infinite;
+      }
+      
+      @keyframes move {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(200px); }
+      }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="740" height="200" class="bg"/>
+  
+  <!-- Title -->
+  <text x="370" y="30" text-anchor="middle" class="title">🏍️ Contrib Tron</text>
+  <text x="370" y="50" text-anchor="middle" class="subtitle">AI Light Cycles Racing Through GitHub Contributions</text>
+  
+  <!-- Contribution Grid (simplified) -->
+  <g transform="translate(50, 70)">
+    <!-- Grid cells -->
+    <rect x="0" y="0" width="8" height="8" class="grid-cell"/>
+    <rect x="10" y="0" width="8" height="8" class="grid-cell"/>
+    <rect x="20" y="0" width="8" height="8" class="grid-cell"/>
+    <rect x="30" y="0" width="8" height="8" class="grid-cell"/>
+    <rect x="40" y="0" width="8" height="8" class="grid-cell"/>
+    
+    <!-- Trail -->
+    <rect x="0" y="0" width="8" height="8" class="trail"/>
+    <rect x="10" y="0" width="8" height="8" class="trail"/>
+    <rect x="20" y="0" width="8" height="8" class="trail"/>
+    
+    <!-- Moving cycle -->
+    <rect x="30" y="0" width="8" height="8" class="cycle cycle-move"/>
+  </g>
+  
+  <!-- Status -->
+  <text x="370" y="180" text-anchor="middle" class="subtitle">Click "Play Interactive Version" below to play!</text>
 </svg>
