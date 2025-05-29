@@ -1,35 +1,47 @@
-# 🏍️ Tron GitHub
+# Hi there! 👋
 
-Transform your GitHub contribution grid into an auto-playing Tron Light Cycles arena! Watch AI-controlled motorcycles race through your coding activity, leaving glowing trails in their wake.
-
-## 🎮 Live Demo
-
-**See it in action**: [markpython86's Tron Game](https://markpython86.github.io/markpython86-tron-github/)
+## 🏍️ Contrib Tron - AI Light Cycles Racing Through My GitHub Contributions
 
 <div align="center">
   <a href="https://markpython86.github.io/markpython86-tron-github/">
-    <img src="https://markpython86.github.io/markpython86-tron-github/preview.png" alt="Tron GitHub Demo" width="800"/>
+    <img src="./tron-game.png" 
+         alt="Tron GitHub Game - AI Light Cycles Racing" 
+         width="800"/>
   </a>
-  <p><em>🏍️ Click to play the live demo - Watch AI cycles race through real GitHub contribution data!</em></p>
+  <br>
+  <em>🎮 Live auto-playing Tron game using my GitHub contribution data</em>
+  <br>
+  <strong><a href="https://markpython86.github.io/markpython86-tron-github/">🏍️ Click to Play Interactive Version</a></strong>
+  <br>
+  <small>Last updated: 2024-12-19 20:00 UTC</small>
 </div>
 
-*Score updates in real-time as AI cycles navigate through the contribution grid, leaving persistent trails and competing for survival.*
+---
 
+### 🚀 About This Game
+
+This auto-playing Tron Light Cycles game transforms my GitHub contribution grid into a racing arena where AI motorcycles compete using advanced pathfinding algorithms.
+
+**🎯 Game Features:**
+- 🧠 **Smart AI**: Neural network-inspired decision making
+- 📊 **Real Data**: Uses actual GitHub contribution patterns  
+- ⚡ **Auto-Playing**: Continuous loop perfect for profiles
+- 🎨 **Visual Effects**: Neon trails and particle systems
+- 🏆 **Scoring**: Survival time + active cycles + trail complexity
+
+### 🛠️ Create Your Own Tron Game
+
+```bash
+git clone https://github.com/markpython86/tron-github.git
+cd tron-github
+npm install && npm run build
+node dist/cli.js init --user YOUR_USERNAME
+```
+
+**⭐ [Star the tron-github project](https://github.com/markpython86/tron-github)** to create your own!
 
 ---
 
-### 🎮 About the Game
-- **Real GitHub Data**: Uses my actual contribution calendar as the game board
-- **AI Light Cycles**: Multiple AI-controlled motorcycles racing through the grid
-- **Persistent Trails**: Each cycle leaves permanent obstacles for others
-- **Auto-Generated**: Updates daily with new races
-
-### 🚀 Tech Stack
-- TypeScript + Canvas API for smooth 60fps gameplay
-- GitHub API integration for real contribution data
-- Puppeteer for automated game capture
-- GitHub Actions for daily updates
-
-[🎮 **Play Interactive Game**](https://markpython86.github.io/markpython86-tron-github/) | [📝 **View Source**](https://github.com/markpython86/tron-github)
-
----
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=markpython86&show_icons=true&theme=dark" alt="GitHub Stats"/>
+</div>
