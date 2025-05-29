@@ -4,9 +4,9 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/markpython86/markpython86/output/contrib-tron-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/markpython86/markpython86/output/contrib-tron.svg" />
-    <img alt="Contrib Tron Game Animation" src="https://raw.githubusercontent.com/markpython86/markpython86/output/contrib-tron.svg" width="740" height="200" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/markpython86/markpython86/main/output/contrib-tron-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/markpython86/markpython86/main/output/contrib-tron.svg" />
+    <img alt="Contrib Tron Game Animation" src="https://raw.githubusercontent.com/markpython86/markpython86/main/output/contrib-tron.svg" width="740" height="200" />
   </picture>
 </div>
 
