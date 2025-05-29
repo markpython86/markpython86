@@ -1,9 +1,8 @@
-name: Update Profile README with Tron Game Screenshot
+name: Update Profile README with Tron Game
 
 on:
   schedule:
-    # Update twice daily to show game activity
-    - cron: '0 8,20 * * *'
+    - cron: '0 */6 * * *'  # Every 6 hours
   workflow_dispatch:
   push:
     branches: [ main ]
@@ -16,115 +15,107 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-
-    - name: Install Puppeteer
-      run: |
-        npm init -y
-        npm install puppeteer
-
-    - name: Capture Tron Game Screenshot
-      run: |
-        cat > capture.js << 'EOF'
-        const puppeteer = require('puppeteer');
-        const fs = require('fs');
-
-        (async () => {
-          const browser = await puppeteer.launch({
-            headless: 'new',
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
-          });
-          
-          const page = await browser.newPage();
-          await page.setViewport({ width: 800, height: 400 });
-          
-          // Navigate to your Tron game
-          await page.goto('https://markpython86.github.io/markpython86-tron-github/', {
-            waitUntil: 'networkidle0'
-          });
-          
-          // Wait for game to load and start
-          await page.waitForTimeout(3000);
-          
-          // Take screenshot
-          await page.screenshot({
-            path: 'tron-game.png',
-            clip: { x: 0, y: 0, width: 800, height: 400 }
-          });
-          
-          await browser.close();
-          console.log('Screenshot captured!');
-        })();
-        EOF
-        
-        node capture.js
-
-    - name: Update README
+    - name: Update README with Tron Game
       run: |
         # Get current timestamp
         TIMESTAMP=$(date '+%Y-%m-%d %H:%M UTC')
         
-        cat > README.md << EOF
+        # Create README with embedded game
+        cat > README.md << 'EOF'
         # Hi there! 👋
 
         ## 🏍️ Contrib Tron - AI Light Cycles Racing Through My GitHub Contributions
 
         <div align="center">
           <a href="https://markpython86.github.io/markpython86-tron-github/">
-            <img src="./tron-game.png" 
-                 alt="Tron GitHub Game - AI Light Cycles Racing" 
-                 width="800"/>
+            <picture>
+              <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/800x300/0d1117/00d4ff/png?text=🏍️+AI+Light+Cycles+Racing+Through+GitHub+Data+🏍️">
+              <img src="https://via.placeholder.com/800x300/f6f8fa/0969da/png?text=🏍️+AI+Light+Cycles+Racing+Through+GitHub+Data+🏍️" 
+                   alt="Tron GitHub Game - Click to Play" 
+                   width="800" 
+                   height="300"/>
+            </picture>
           </a>
+        </div>
+
+        <div align="center">
+          <strong>🎮 <a href="https://markpython86.github.io/markpython86-tron-github/">PLAY THE LIVE GAME</a> 🎮</strong>
           <br>
-          <em>🎮 Live auto-playing Tron game using my GitHub contribution data</em>
-          <br>
-          <strong><a href="https://markpython86.github.io/markpython86-tron-github/">🏍️ Click to Play Interactive Version</a></strong>
-          <br>
-          <small>Last updated: $TIMESTAMP</small>
+          <em>Watch AI motorcycles race through my real GitHub contribution data!</em>
+          <br><br>
+          
+          <a href="https://markpython86.github.io/markpython86-tron-github/">
+            <img src="https://img.shields.io/badge/🏍️_Play_Now-Live_Game-00d4ff?style=for-the-badge&logo=github" alt="Play Tron Game"/>
+          </a>
+          <a href="https://github.com/markpython86/tron-github">
+            <img src="https://img.shields.io/badge/⭐_Star-Create_Your_Own-ffa502?style=for-the-badge&logo=github" alt="Star Project"/>
+          </a>
         </div>
 
         ---
 
         ### 🚀 About This Game
 
-        This auto-playing Tron Light Cycles game transforms my GitHub contribution grid into a racing arena where AI motorcycles compete using advanced pathfinding algorithms.
+        This **auto-playing Tron Light Cycles game** transforms my GitHub contribution grid into a racing arena where AI motorcycles compete using advanced pathfinding algorithms.
 
         **🎯 Game Features:**
-        - 🧠 **Smart AI**: Neural network-inspired decision making
-        - 📊 **Real Data**: Uses actual GitHub contribution patterns  
-        - ⚡ **Auto-Playing**: Continuous loop perfect for profiles
-        - 🎨 **Visual Effects**: Neon trails and particle systems
-        - 🏆 **Scoring**: Survival time + active cycles + trail complexity
+        - 🧠 **Smart AI**: Neural network-inspired decision making with 8-factor evaluation
+        - 📊 **Real Data**: Uses my actual GitHub contribution patterns as the game board
+        - ⚡ **Auto-Playing**: Continuous loop perfect for profile embedding
+        - 🎨 **Visual Effects**: Neon trails, particle systems, and smooth animations
+        - 🏆 **Dynamic Scoring**: Based on survival time, active cycles, and trail complexity
+        - 🔄 **Always Active**: Restarts automatically for endless entertainment
 
         ### 🛠️ Create Your Own Tron Game
 
-        \`\`\`bash
+        Want to turn your GitHub profile into a gaming arena? It's easy!
+
+        ```bash
+        # Clone the project
         git clone https://github.com/markpython86/tron-github.git
         cd tron-github
+
+        # Install and build
         npm install && npm run build
+
+        # Create your game
         node dist/cli.js init --user YOUR_USERNAME
-        \`\`\`
+
+        # Deploy to GitHub Pages
+        cd YOUR_USERNAME-tron-github
+        npm install && npm run deploy
+        ```
 
         **⭐ [Star the tron-github project](https://github.com/markpython86/tron-github)** to create your own!
+
+        ### 🎮 How It Works
+
+        1. **Fetches Real Data**: Pulls your GitHub contribution SVG
+        2. **AI Competition**: 4 smart cycles with different strategies race
+        3. **Persistent Trails**: Each cycle leaves permanent light trails
+        4. **Collision Detection**: Cycles crash when hitting trails or edges
+        5. **Auto-Restart**: Seamless loop for continuous entertainment
 
         ---
 
         <div align="center">
-          <img src="https://github-readme-stats.vercel.app/api?username=markpython86&show_icons=true&theme=dark" alt="GitHub Stats"/>
+          <img src="https://github-readme-stats.vercel.app/api?username=markpython86&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats"/>
+          <br><br>
+          <em>Last updated: TIMESTAMP_PLACEHOLDER</em>
         </div>
         EOF
+
+        # Replace timestamp placeholder
+        sed -i "s/TIMESTAMP_PLACEHOLDER/$TIMESTAMP/g" README.md
 
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add README.md tron-game.png
+        git add README.md
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
-          git commit -m "🏍️ Update Tron game screenshot - $(date)"
+          git commit -m "🏍️ Update Tron game display - $(date)"
           git push
         fi
