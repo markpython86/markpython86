@@ -3,15 +3,16 @@
 ## 🏍️ Contrib Tron - AI Light Cycles Racing Through My GitHub Contributions
 
 <div align="center">
-  <a href="https://markpython86.github.io/markpython86-tron-github/">
-    <img src="https://img.shields.io/badge/🏍️-Play%20Contrib%20Tron-00d4ff?style=for-the-badge&logo=github" 
-         alt="Play Contrib Tron Game" 
-         width="300" 
-         height="50" />
-  </a>
+  <iframe 
+    src="https://markpython86.github.io/markpython86-tron-github/" 
+    width="740" 
+    height="200" 
+    frameborder="0"
+    style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);">
+  </iframe>
 </div>
 
-*Click above to play! Watch AI-controlled light cycles race through my GitHub contribution grid.*
+*The game above auto-plays! Watch AI-controlled light cycles race through my GitHub contribution grid.*
 
 ---
 
@@ -27,7 +28,7 @@
 - Vite for fast builds and hot reload
 - GitHub Actions for automatic deployment
 
-[🎮 **Play the Game**](https://markpython86.github.io/markpython86-tron-github/) | [📝 **View Source**](https://github.com/markpython86/tron-github)
+[🎮 **Play Full Screen**](https://markpython86.github.io/markpython86-tron-github/) | [📝 **View Source**](https://github.com/markpython86/tron-github)
 
 ---
 
