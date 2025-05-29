@@ -26,83 +26,17 @@ jobs:
 
         ## 🏍️ Contrib Tron - AI Light Cycles Racing Through My GitHub Contributions
 
-        <div align="center">
-          <a href="https://markpython86.github.io/markpython86-tron-github/">
-            <picture>
-              <source media="(prefers-color-scheme: dark)" srcset="https://via.placeholder.com/800x300/0d1117/00d4ff/png?text=🏍️+AI+Light+Cycles+Racing+Through+GitHub+Data+🏍️">
-              <img src="https://via.placeholder.com/800x300/f6f8fa/0969da/png?text=🏍️+AI+Light+Cycles+Racing+Through+GitHub+Data+🏍️" 
-                   alt="Tron GitHub Game - Click to Play" 
-                   width="800" 
-                   height="300"/>
-            </picture>
-          </a>
-        </div>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://markpython86.github.io/markpython86-tron-github/game?mode=dark" />
+          <source media="(prefers-color-scheme: light)" srcset="https://markpython86.github.io/markpython86-tron-github/game?mode=light" />
+          <img alt="Tron GitHub Game - AI Light Cycles Racing" src="https://markpython86.github.io/markpython86-tron-github/game" />
+        </picture>
 
-        <div align="center">
-          <strong>🎮 <a href="https://markpython86.github.io/markpython86-tron-github/">PLAY THE LIVE GAME</a> 🎮</strong>
-          <br>
-          <em>Watch AI motorcycles race through my real GitHub contribution data!</em>
-          <br><br>
-          
-          <a href="https://markpython86.github.io/markpython86-tron-github/">
-            <img src="https://img.shields.io/badge/🏍️_Play_Now-Live_Game-00d4ff?style=for-the-badge&logo=github" alt="Play Tron Game"/>
-          </a>
-          <a href="https://github.com/markpython86/tron-github">
-            <img src="https://img.shields.io/badge/⭐_Star-Create_Your_Own-ffa502?style=for-the-badge&logo=github" alt="Star Project"/>
-          </a>
-        </div>
+        🎮 Live auto-playing Tron game using my GitHub contribution data
 
-        ---
+        🏍️ [Click to Play Interactive Version](https://markpython86.github.io/markpython86-tron-github/)
 
-        ### 🚀 About This Game
-
-        This **auto-playing Tron Light Cycles game** transforms my GitHub contribution grid into a racing arena where AI motorcycles compete using advanced pathfinding algorithms.
-
-        **🎯 Game Features:**
-        - 🧠 **Smart AI**: Neural network-inspired decision making with 8-factor evaluation
-        - 📊 **Real Data**: Uses my actual GitHub contribution patterns as the game board
-        - ⚡ **Auto-Playing**: Continuous loop perfect for profile embedding
-        - 🎨 **Visual Effects**: Neon trails, particle systems, and smooth animations
-        - 🏆 **Dynamic Scoring**: Based on survival time, active cycles, and trail complexity
-        - 🔄 **Always Active**: Restarts automatically for endless entertainment
-
-        ### 🛠️ Create Your Own Tron Game
-
-        Want to turn your GitHub profile into a gaming arena? It's easy!
-
-        ```bash
-        # Clone the project
-        git clone https://github.com/markpython86/tron-github.git
-        cd tron-github
-
-        # Install and build
-        npm install && npm run build
-
-        # Create your game
-        node dist/cli.js init --user YOUR_USERNAME
-
-        # Deploy to GitHub Pages
-        cd YOUR_USERNAME-tron-github
-        npm install && npm run deploy
-        ```
-
-        **⭐ [Star the tron-github project](https://github.com/markpython86/tron-github)** to create your own!
-
-        ### 🎮 How It Works
-
-        1. **Fetches Real Data**: Pulls your GitHub contribution SVG
-        2. **AI Competition**: 4 smart cycles with different strategies race
-        3. **Persistent Trails**: Each cycle leaves permanent light trails
-        4. **Collision Detection**: Cycles crash when hitting trails or edges
-        5. **Auto-Restart**: Seamless loop for continuous entertainment
-
-        ---
-
-        <div align="center">
-          <img src="https://github-readme-stats.vercel.app/api?username=markpython86&show_icons=true&theme=dark&hide_border=true" alt="GitHub Stats"/>
-          <br><br>
-          <em>Last updated: TIMESTAMP_PLACEHOLDER</em>
-        </div>
+        Last updated: TIMESTAMP_PLACEHOLDER
         EOF
 
         # Replace timestamp placeholder

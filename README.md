@@ -2,7 +2,11 @@
 
 ## 🏍️ Contrib Tron - AI Light Cycles Racing Through My GitHub Contributions
 
-[![Tron GitHub Game - AI Light Cycles Racing](output/contrib-tron-dark.svg)](https://markpython86.github.io/markpython86-tron-github/)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://markpython86.github.io/markpython86-tron-github/game?mode=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://markpython86.github.io/markpython86-tron-github/game?mode=light" />
+  <img alt="Tron GitHub Game - AI Light Cycles Racing" src="https://markpython86.github.io/markpython86-tron-github/game" />
+</picture>
 
 🎮 Live auto-playing Tron game using my GitHub contribution data
 
