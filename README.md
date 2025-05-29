@@ -3,16 +3,14 @@
 ## 🏍️ Contrib Tron - AI Light Cycles Racing Through My GitHub Contributions
 
 <div align="center">
-  <iframe 
-    src="https://markpython86.github.io/markpython86-tron-github/" 
-    width="740" 
-    height="200" 
-    frameborder="0"
-    style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);">
-  </iframe>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/markpython86/markpython86/output/contrib-tron-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/markpython86/markpython86/output/contrib-tron.svg" />
+    <img alt="Contrib Tron Game Animation" src="https://raw.githubusercontent.com/markpython86/markpython86/output/contrib-tron.svg" width="740" height="200" />
+  </picture>
 </div>
 
-*The game above auto-plays! Watch AI-controlled light cycles race through my GitHub contribution grid.*
+*Watch AI-controlled light cycles race through my GitHub contribution grid! [🎮 Play Interactive Version](https://markpython86.github.io/markpython86-tron-github/)*
 
 ---
 
@@ -20,16 +18,14 @@
 - **Real GitHub Data**: Uses my actual contribution calendar as the game board
 - **AI Light Cycles**: Multiple AI-controlled motorcycles racing through the grid
 - **Persistent Trails**: Each cycle leaves permanent obstacles for others
-- **Continuous Action**: Auto-playing game perfect for profile viewing
+- **Auto-Generated**: Updates daily with new races
 
 ### 🚀 Tech Stack
 - TypeScript + Canvas API for smooth 60fps gameplay
 - GitHub API integration for real contribution data
-- Vite for fast builds and hot reload
-- GitHub Actions for automatic deployment
+- Puppeteer for automated game capture
+- GitHub Actions for daily updates
 
-[🎮 **Play Full Screen**](https://markpython86.github.io/markpython86-tron-github/) | [📝 **View Source**](https://github.com/markpython86/tron-github)
+[🎮 **Play Interactive Game**](https://markpython86.github.io/markpython86-tron-github/) | [📝 **View Source**](https://github.com/markpython86/tron-github)
 
 ---
-
-<!-- Rest of your profile content -->

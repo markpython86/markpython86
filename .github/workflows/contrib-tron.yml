@@ -1,0 +1,30 @@
+name: Generate Contrib Tron Animation
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # Daily at noon
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Generate Contrib Tron Animation
+        uses: markpython86/tron-github@main
+        with:
+          github_user_name: markpython86
+          outputs: |
+            output/contrib-tron.svg
+            output/contrib-tron-dark.svg?theme=dark
+            output/contrib-tron.gif
+      
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add output/
+          git commit -m "Update Contrib Tron animation" || exit 0
+          git push
