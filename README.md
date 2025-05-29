@@ -1,16 +1,20 @@
-# Hi there! 👋
+# 🏍️ Tron GitHub
 
-## 🏍️ Contrib Tron - AI Light Cycles Racing Through My GitHub Contributions
+Transform your GitHub contribution grid into an auto-playing Tron Light Cycles arena! Watch AI-controlled motorcycles race through your coding activity, leaving glowing trails in their wake.
+
+## 🎮 Live Demo
+
+**See it in action**: [markpython86's Tron Game](https://markpython86.github.io/markpython86-tron-github/)
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/markpython86/markpython86/main/output/contrib-tron-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/markpython86/markpython86/main/output/contrib-tron.svg" />
-    <img alt="Contrib Tron Game Animation" src="https://raw.githubusercontent.com/markpython86/markpython86/main/output/contrib-tron.svg" width="740" height="200" />
-  </picture>
+  <a href="https://markpython86.github.io/markpython86-tron-github/">
+    <img src="https://markpython86.github.io/markpython86-tron-github/preview.png" alt="Tron GitHub Demo" width="800"/>
+  </a>
+  <p><em>🏍️ Click to play the live demo - Watch AI cycles race through real GitHub contribution data!</em></p>
 </div>
 
-*Watch AI-controlled light cycles race through my GitHub contribution grid! [🎮 Play Interactive Version](https://markpython86.github.io/markpython86-tron-github/)*
+*Score updates in real-time as AI cycles navigate through the contribution grid, leaving persistent trails and competing for survival.*
+
 
 ---
 
