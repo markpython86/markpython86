@@ -1,7 +1,7 @@
 name: Generate Tron Light Cycles
 
 on:
-  # Runs on schedule (daily at midnight UTC)
+  # Runs on schedule (daily at midnight UTC) 
   schedule:
     - cron: "0 0 * * *"
   
