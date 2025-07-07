@@ -17,11 +17,15 @@ jobs:
     runs-on: ubuntu-latest
     name: Generate Tron Animation
     
+    permissions:
+      contents: write
+      actions: read
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PERSONAL_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
         
       - name: Generate Tron Light Cycles Animation
         uses: markpython86/tron-github@main
