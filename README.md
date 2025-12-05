@@ -38,11 +38,9 @@ Transform any GitHub contribution grid into an animated Tron Light Cycles arena!
 An interactive version of the Tron game using my own contribution data. Watch 4 AI cycles compete in real-time!
 
 ## 📫 How to Reach Me
-
-- 💼 LinkedIn: [Connect with me](https://linkedin.com/in/markpython86)
-- 🐦 Twitter: [@markpython86](https://twitter.com/markpython86)
-- 📧 Email: mark@example.com
-- 🌐 Website: [markpython86.dev](https://markpython86.dev)
+- 💼 LinkedIn: [Connect with me](https://www.linkedin.com/in/mark-faraj)
+- 𝕏  the everything app: [@markfaraj1](https://x.com/markfaraj1)
+- 🌐 Website: [mark-faraj.dev](https://mark-faraj.dev)
 
 ## 🎯 Fun Facts
 
@@ -55,4 +53,4 @@ An interactive version of the Tron game using my own contribution data. Watch 4 
 
 ⭐ **Like what you see?** Consider starring my repositories and following for more innovative projects!
 
-![Profile Views](https://komarev.com/ghpvc/?username=markpython86&color=blue&style=flat-square) 
+![Profile Views](u) 
